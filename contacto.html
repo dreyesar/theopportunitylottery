@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Oportunity Lottery</title>
+    <title>Formulario de Contacto</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
 	<script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -16,10 +17,24 @@
 		<a href="acercade.html" class="nav-enlace">Acerca del juego</a>
 		<a href="contacto.html" class="nav-enlace">Contacto</a>
 	</nav>
-
-    <section>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, numquam, placeat sint ratione porro, ipsa officiis doloribus debitis suscipit corrupti consequuntur ad eveniet itaque ex fugiat accusantium voluptas nemo facilis.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut beatae natus, iure aperiam non, harum necessitatibus deleniti deserunt mollitia quia nam. Eveniet tempore porro illo necessitatibus? Praesentium fugiat eveniet sit.
-    </section>
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Contactanos</h2>
+            <p>Pueden dejarno tus dudas, sugerencias, recomendaciones en la caja de texto, las cuales
+                tendremos en cuenta. Tambien puedes llamarnos o enviarnos un correo; no olvides
+                visitarnos en nuestras redes. Gracias por jugar!
+            </p>
+            <a href="#"><i class="fa fa-phone"></i>+54-011-123456789</a>
+            <a href="#"><i class="fa fa-envelope"></i>info@theopportunitylottery.bet.ar</a>
+            <a href="#"><i class="fa fa-map-marked"></i>Argentina</a>
+        </div>
+        <form action="#" autocomplete="off">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+            <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+            <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            
+        </form>
+    </div>
 </body>
 </html>
