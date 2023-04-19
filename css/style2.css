@@ -7,6 +7,14 @@
 nav{
 	text-align: center;
 }
+section{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
 .nav-enlace{
     text-decoration: none;
     color: black;
