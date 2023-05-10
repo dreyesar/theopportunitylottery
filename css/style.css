@@ -29,6 +29,31 @@ body{
 	font-size: 1.4em;
 }
 
+#aciertos{
+	position: absolute;
+	top: 20%;
+	left: 77%;
+	transform: translate(-50%, -50%);
+	font-size: 17px;
+	color: orange;
+}
+
+#ganancias{
+	position: absolute;
+	top: 10%;
+	left: 77%;
+	transform: translate(-50%, -50%);
+	font-size: 17px;
+	color: orange;
+}
+
+#dinero2{
+	font-size: 5em;
+	line-height: 70px;
+	
+}
+
+
 #tirar{
 	width: 180px;
 	height: 180px;

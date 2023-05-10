@@ -1,9 +1,12 @@
 window.onload=inicio;
-var credito=Math.floor(Math.random()*4)+9;
+//var credito=Math.floor(Math.random()*4)+100;
+var credito=Math.floor(Math.random()+100);
 var imagenes=["chupetin.png","camara.png","gorra.png","llavero.png","sacapuntas.png","tenedor.png","rey.png"];
 var premios=[3,2,3,2,2,3,6];
 var numeros_actuales=[];
 var activos = false;
+
+let aciertos = 1;
 
 
 function inicio(){
@@ -86,7 +89,6 @@ function escoger_numero(actual){
 
 
 
-
 function mostrar_imagen(num,im){
 //document.getElementsByClassName("imagen")[num,im].getElementsByTagName("img")[0].src="img/"+imagenes[im];
 document.querySelectorAll(".imagen img")[num].src = "img/" + imagenes[im];
@@ -105,6 +107,10 @@ function comparar(){
         mensaje+=`</div>`;
         mostrar_mensaje(mensaje);
         credito+=premios[numeros_actuales[0]];
+
+        const aciertosDiv = document.getElementById("aciertos");
+        aciertosDiv.innerHTML = `Aciertos: ${aciertos}`;
+        aciertos++;
     }
     credito--;
     actualizar();
