@@ -6,7 +6,9 @@ var premios=[3,2,3,2,2,3,6];
 var numeros_actuales=[];
 var activos = false;
 
-let aciertos = 1;
+let aciertos = 1; //guarda valor de aciertos
+
+var dineroGanado = 0; //monedas ganadas
 
 
 function inicio(){
@@ -108,9 +110,14 @@ function comparar(){
         mostrar_mensaje(mensaje);
         credito+=premios[numeros_actuales[0]];
 
+        //cuenta los aciertos
         const aciertosDiv = document.getElementById("aciertos");
         aciertosDiv.innerHTML = `Aciertos: ${aciertos}`;
         aciertos++;
+        
+        dineroGanado += p;
+        document.getElementById("monedas_ganadas").innerHTML = `Monedas ganadas: ${dineroGanado}`;
+
     }
     credito--;
     actualizar();
