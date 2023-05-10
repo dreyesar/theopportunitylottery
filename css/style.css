@@ -38,18 +38,15 @@ body{
 	color: orange;
 }
 
-#ganancias{
+
+
+#monedas_ganadas{
 	position: absolute;
-	top: 10%;
-	left: 77%;
+	top: 50%;
+	left: 81%;
 	transform: translate(-50%, -50%);
 	font-size: 17px;
 	color: orange;
-}
-
-#dinero2{
-	font-size: 5em;
-	line-height: 70px;
 	
 }
 
